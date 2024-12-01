@@ -8,13 +8,10 @@ lt(90)
 for i in range(10):
     arr = pos()
     goto((arr[0] + 3 * k), (arr[1] + 6 * k))
-    dot(6, 'black')
     arr = pos()
     goto((arr[0] + 7 * k), (arr[1] + -2 * k))
     arr = pos()
-    dot(6, 'black')
     goto((arr[0] + -10 * k), (arr[1] + -4 * k))
-    dot(6, 'black')
 
 pu()
 for x in range(-30, 30):

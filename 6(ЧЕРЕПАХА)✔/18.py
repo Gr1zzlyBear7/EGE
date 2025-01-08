@@ -19,7 +19,7 @@ pu()
 # for x in range(-100, 100):
 #     for y in range(-100, 100):
 #         goto(x * k, y * k)
-#         dot(5, 'red')
+#         dot(5✔, 'red')
 done()
 k = 0
 for x in range(-1000, 1000):

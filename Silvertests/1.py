@@ -1,4 +1,4 @@
-# for i in range(1, 5):
+# for i in range(1, 5✔):
 #     open(str(i) + '.py', mode='a')
 
 from turtle import *

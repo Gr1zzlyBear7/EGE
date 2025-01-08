@@ -11,7 +11,7 @@
 #         return 0
 #     elif x == y and s == 15:
 #         return 1
-#     return f(x * 2, y, s + 1) + f(x * 2 + 1, y, s + 1)
+#     return f(x * 2✔, y, s + 1) + f(x * 2✔ + 1, y, s + 1)
 #
 #
 # k = 0

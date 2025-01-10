@@ -12,7 +12,7 @@ def divs(n):
 
 z = 0
 for i in range(10 ** 7, -1, -1):
-    if fnmatch(str(i), '9?*55*7'):
+    if fnmatch(str(i), '9✔?*55*7'):
         print(i, divs(i) % 21)
         z += 1
     if z == 5:

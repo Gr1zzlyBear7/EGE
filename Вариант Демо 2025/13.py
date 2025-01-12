@@ -1,8 +1,9 @@
 from ipaddress import *
 
-net = ip_network('172.16✔.168.0/255.255.248.0', 0)
+net = ip_network('172.16.168.0/255.255.248.0', 0)
 k = 0
 for i in net:
-    if bin(int(i)).count('1') % 5:
+    if bin(int(i)).count('1') % 5 != 0:
         k += 1
+
 print(k)

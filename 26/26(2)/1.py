@@ -1,42 +1,14 @@
-size = 100000
-k = 0
-data = sorted(list(map(int, open('1.txt'))))
-flag = True
-ans = []
-for elem in data:
-    if flag:
-        el = max(data)
-        if size - el >= 0:
-            size -= el
-            k += 1
-            data.remove(el)
-            flag = False
-            ans.append(el)
-        else:
-            for x in data[::-1]:
-                if x <= size:
-                    size -= x
-                    k += 1
-                    data.remove(x)
-                    flag = False
-                    ans.append(x)
-                    break
-    else:
-        el = min(data)
-        if size - el >= 0:
-            size -= el
-            k += 1
-            data.remove(el)
-            ans.append(el)
-            flag = True
-        else:
-            for x in data:
-                if x <= size:
-                    size -= x
-                    k += 1
-                    data.remove(x)
-                    flag = False
-                    ans.append(x)
-                    break
+s = 100000
+n = 1000
 
-print(k, ans[-1])
+data = sorted(list(map(int, open('1.txt'))))
+arr = []
+
+while s >= sum(arr) + data[0]:
+    arr.append(data.pop(0))
+
+for i in range(len(data)):
+    if sum(arr) - arr[-1] + data[i] <= s:
+        arr[-1], data[i] = data[i], arr[-1]
+
+print(len(arr), arr[-1])

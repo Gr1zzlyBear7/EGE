@@ -1,17 +1,16 @@
 from itertools import product
 
-s = 'аекптч'
+al = 'АЕКПТЧ'
 k = 0
-flag = False
-z = 0
-for i in product(s, repeat=7):
-    if 'аптечка' == ''.join(i):
-        flag = True
-    elif 'печатка' == ''.join(i):
-        flag = False
-    if flag:
-        if z:
-            k += 1
-        z += 1
-print(k)
-print(list(product(s, repeat=7)).index(tuple('печатка')) - list(product(s, repeat=7)).index(tuple('аптечка')))
+z = 125459
+r = 0
+for i in product(al, repeat=7):
+    if r:
+        k += 1
+    if ''.join(i) == 'АПТЕЧКА':
+        r = 1
+    if ''.join(i) == 'ПЕЧАТКА':
+        print(k - 1) # вычитаем саму печатку
+        break
+arr = list(product(al, repeat=7))
+print(len(arr[arr.index(tuple('АПТЕЧКА')) + 1:arr.index(tuple('ПЕЧАТКА'))]))

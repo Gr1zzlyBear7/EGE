@@ -1,11 +1,9 @@
-const = 18 * 7 ** 108 - 5 * 49 ** 76 + 343 ** 35 - 50
+data = [list(map(int, line.split())) for line in open('9')]
+k = 0
+ans = []
+for line in data:
+    if line[0] == line[2] and line[1] == line[3]:
+        if sum(line) == 360:
+            k += 1
 
-def fn(n):
-  new = ''
-  while n > 0:
-    new += str(n % 49)
-    n //= 49
-  return (new[::-1])
-
-
-print(sum(map(int, fn(abs(const)))))
+print(k)

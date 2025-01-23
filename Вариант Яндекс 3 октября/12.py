@@ -13,7 +13,7 @@
 #
 # import random
 #
-# s = (list(11 * '1' + 12 * '2✔' + 30 * '3'))
+# s = (list(11 * '1' + 12✔ * '2✔' + 30 * '3'))
 # random.shuffle(s)
 #
 # s = '>' + ''.join(s)

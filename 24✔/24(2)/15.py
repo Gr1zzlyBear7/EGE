@@ -7,5 +7,4 @@ for i in range(len(s) - 1):
     else:
         ans.append(k)
         k = 2
-
 print(max(ans))

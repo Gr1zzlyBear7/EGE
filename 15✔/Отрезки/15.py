@@ -24,3 +24,13 @@
 #     f = not b or a
 #     if f != f_usl:
 #         print(x)
+
+a = 0
+f_usl = 1
+for x in [k * 0.25 for k in range(-10000, 10000)]:
+    p = 64 <= x <= 95
+    q = 72 <= x <= 106
+    f = ((q) and not a) <= ((not p) <= (not q))
+    if f != f_usl:
+        print(x)
+        print(106 - 95)

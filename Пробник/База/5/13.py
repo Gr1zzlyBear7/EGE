@@ -1,0 +1,7 @@
+from ipaddress import *
+k = 0
+for m in range(33):
+    net = ip_network(f'251.211.38.240/{m}', False)
+    if '251.211.38.0' in str(net):
+        k += 1
+print(k)

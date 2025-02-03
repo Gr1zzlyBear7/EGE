@@ -1,4 +1,4 @@
-s = open('2518').readline()
+s = open('files/2518').readline()
 m = [0] * len(s)
 for i in range(1, len(s)):
     if s[i] != 'D':

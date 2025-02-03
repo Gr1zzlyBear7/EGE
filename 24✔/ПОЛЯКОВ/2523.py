@@ -1,4 +1,4 @@
-s = open('2523.txt').readline()
+s = open('files/2523.txt').readline()
 nums = []
 sub = ''
 for i in range(len(s)):

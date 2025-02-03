@@ -1,4 +1,4 @@
-s = open('2506.txt').readline()
+s = open('files/2506.txt').readline()
 
 m = [1] * len(s)
 for i in range(1, len(s)):

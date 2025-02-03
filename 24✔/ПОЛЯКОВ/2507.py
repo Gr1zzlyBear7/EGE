@@ -1,4 +1,4 @@
-s = open('2507').readline()
+s = open('files/2507').readline()
 m = [1] * len(s)
 for i in range(1, len(s)):
     if s[i] == s[i - 1]:

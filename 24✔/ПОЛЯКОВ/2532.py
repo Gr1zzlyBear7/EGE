@@ -6,6 +6,6 @@ for i in range(1, len(s)):
     if s[i - 1] < s[i]:
         m[i] = m[i - 1] + 1
         if m[i] == 7:
-            print(i - 6)
+            print(i - 6 + 1)
             break
 print(max(m))

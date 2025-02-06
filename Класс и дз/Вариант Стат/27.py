@@ -45,5 +45,5 @@ r1 = (centerA[0][1] + centerA[1][1]) / 2
 print(int(r1 * 10000))
 centerB = [center(x) for x in new_clasterB]
 r1 = (centerB[0][1] + centerB[1][1] + centerB[2][1] + centerB[3][1]) / 4
-print(int(r1 * 10000)
+print(int(r1 * 10000))
 # правильно!

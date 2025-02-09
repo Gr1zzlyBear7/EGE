@@ -10,7 +10,7 @@ ans = []
 for n in range(1, 10000):
     t = tri(n)
     if n % 3 == 0:
-        t = '1' + t + '02'
+        t = '1' + t + '02(98 из 100)'
     else:
         t += tri((n % 3) * 4)
     r = int(t, 3)

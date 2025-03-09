@@ -9,3 +9,15 @@ for i in range(1, len(s)):
         while 'ORO' in sub or 'ROR' in sub:
             sub = sub[st:i]
             st += 1
+
+
+ans = []
+for i in range(len(data) - 2):
+    tri = [data[i], data[i + 1], data[i + 2]]
+    c1 = []
+    for elem in tri:
+        if abs(elem) % 10 == 3 or abs(elem) % 10 == 5:
+            c1.append(elem)
+    if len(c1) > 1:
+        ans.append(sum(tri))
+print(len(ans))

@@ -1,22 +1,13 @@
-s = open('24_21717.txt').readline()
+s1 = '7' * 15
+s2 = '1' * 12
+while '77777' in s1 or '1111' in s1:
+    s1 = s1.replace('77777', '11', 1)
+    s1 = s1.replace('1111', '7', 1)
 
-k = st = 0
-mini = 1000000000000
-for i in range(2, len(s)):
-    if s[i - 2] + s[i - 1] + s[i] == 'RSQ':
-        k += 1
-    while k == 130:
-        try:
-            if s[i + 1] != 'Q':
-                mini = min(mini, i + 1 - st + 1)
-                if s[st] + s[st + 1] + s[st + 2] == 'RSQ':
-                    k -= 1
-                st += 1
-            else:
-                if s[st] + s[st + 1] + s[st + 2] == 'RSQ':
-                    k -= 1
-                st += 1
-        except:
-            break
-mini = min(mini, i + 1 - st + 1)
-print(mini)
+while '77777' in s2 or '1111' in s2:
+    s2 = s2.replace('77777', '11', 1)
+    s2 = s2.replace('1111', '7', 1)
+
+z = (sum(map(int, s1)))
+z1 = (sum(map(int, s2)))
+print(z1 - zd)

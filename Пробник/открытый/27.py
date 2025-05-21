@@ -25,7 +25,7 @@ def dist(p1, p2):
 def center(k):
     m = []
     for p in k:
-        sm = [dist(p, p1) for p1 in k]
+        sm = sum([dist(p, p1) for p1 in k])
         m.append([sm, p])
     return min(m)[1]
 

@@ -1,16 +1,5 @@
+import time
+import keyboard
 
-for i in range((int(input()))):
-    s, p = map(int, input().split())
-    semi_p = p / 2
-    d = semi_p ** 2 - 4 * s
-    if d >= 0:
-        a = (semi_p + d ** 0.5) / 2
-        b = (semi_p - d ** 0.5) / 2
-        str_a = "{:f}".format(a).rstrip('0')
-        str_b = ("{:f}".format(b)).rstrip('0')
-        if len(str_a[str_a.find('.') + 1:]) == 0 and len(str_b[str_b.find('.') + 1:]) == 0:
-            print(int(a), int(b))
-        else:
-            print(0, 0)
-    else:
-        print(0, 0)
+time.sleep(5)
+keyboard.write("import re from typing import List def solution(tasks: List[str]) -> List[List[str]]: task_words = [set(re.findall(r'\w+', task.lower())) for task in tasks] groups = [] used_indices = set() for i in range(len(tasks)): if i not in used_indices: current_group = [] to_process = [i] while to_process: idx = to_process.pop() if idx not in used_indices: used_indices.add(idx) current_group.append(idx) for j in range(len(tasks)): if j not in used_indices and task_words[idx] & task_words[j]: to_process.append(j) if len(current_group) >= 2: group_tasks = [tasks[i] for i in sorted(current_group)] groups.append(group_tasks) groups.sort(key=lambda g: min(tasks.index(task) for task in g)) return groups", 0.01)
